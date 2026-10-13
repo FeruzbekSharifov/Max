@@ -1,0 +1,30 @@
+# Everything Max creates at runtime lives in data/ and is personal. Max recreates the folder on start.
+#   memory:   about_me.md, claude_chats.md, max_memory.json, history.json, claude_topics_cache.json
+#   secrets:  config.json (AI API keys)
+#   private:  location.json, server.log, browser-profile/ (cookies, mic permission)
+#   build:    MaxNative.dll (compiled from server/MaxNative.cs on first start)
+data/
+
+# Memory files, in case they ever appear outside data/
+**/about_me.md
+**/claude_chats.md
+**/max_memory.json
+**/history.json
+**/claude_topics_cache.json
+**/memory/
+
+# Keys, passwords, tokens
+.env
+.env.*
+**/config.json
+*.key
+*.pem
+*.pfx
+*secret*
+*token*
+
+# Misc
+*.log
+*.bak
+Thumbs.db
+desktop.ini
